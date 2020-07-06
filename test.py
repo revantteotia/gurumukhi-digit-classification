@@ -107,6 +107,7 @@ if __name__ == "__main__":
     X_test, y_test = loadTestData(test_dataset_path)
 
     # loading trained model
+    # NOTE : Use "gur_digit_classification_with_augmentation.ipynb" notebook to create trained model before testing 
     model = tf.keras.models.load_model('multi_hidden_layer_NN.h5')
     
     evaluateTestData(model, X_test, y_test)
